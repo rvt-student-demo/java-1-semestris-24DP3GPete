@@ -4,7 +4,18 @@ import java.util.ArrayList;
 
 public class JMArrayList {
     public static void main(String[] args) {
-        
+        ArrayList<String> strings = new ArrayList<>();
+
+        strings.add("First");
+        strings.add("Second");
+        strings.add("Third");
+
+        System.out.println(strings);
+
+        removeLast(strings);
+        removeLast(strings);
+
+        System.out.println(strings);
     }
 
     public static void onlyTheseNumbers() {
@@ -54,15 +65,6 @@ public class JMArrayList {
 
     public static void removeLast(ArrayList<String> strings) {
 
-        strings.add("First");
-        strings.add("Second");
-        strings.add("Third");
-
-        System.out.println(strings);
-
-        strings.remove(strings.size()-1);
-        strings.remove(strings.size()-1);
-
-        System.out.println(strings);
+       strings.remove(strings.size()-1);
     }
 }
